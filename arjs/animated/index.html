@@ -44,13 +44,7 @@
       renderer="logarithmicDepthBuffer: true;"
       embedded
       arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
-      <a-assets>
-        <a-asset-item
-          id="bee"
-          src="https://raw.githubusercontent.com/mhddzakwan/mhddzakwan.github.io/main/assets/bee/scene.gltf"
-        >
-        </a-asset-item>
-      </a-assets>
+
       <!-- a-nft is the anchor that defines an Image Tracking entity -->
       <!-- on 'url' use the path to the Image Descriptors created before. -->
       <!-- the path should end with the name without the extension e.g. if file is trex.fset' the path should end with trex -->
@@ -63,7 +57,7 @@
         smoothThreshold="5">
           <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
           <a-entity
-          
+           gltf-model=""
           position="0 0 -3"
           scale="3 3 3"
           src="#bee"
